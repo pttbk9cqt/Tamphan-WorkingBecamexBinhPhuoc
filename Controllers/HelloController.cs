@@ -4,9 +4,9 @@ namespace Tamphan_WorkingBecamexBinhPhuoc.Controllers
 {
     public class HelloController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Homepage()
         {
-            ViewBag.Message = "Hello MVC - commit đầu tiên!";
+            ViewBag.Tiêu_Đề = "Hello MVC - commit đầu tiên!";
             return View();
         }
     }

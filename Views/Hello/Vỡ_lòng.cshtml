@@ -1,0 +1,52 @@
+﻿<h2>@ViewBag.Tiêu_đề</h2>
+<p>Đây là View MVC đầu tiên do tôi tạo.</p>
+<h1>Tiêu đề to nhất</h1>
+<h2>Tiêu đề nhỏ hơn</h2>
+<h3>Nhỏ nữa</h3>
+<p>Đây là một đoạn văn.</p>
+<p>Đây là đoạn khác.</p>
+<!-- đây là cú pháp cmt của html thuần, có thể bật nhanh bằng Ctrl K + Ctrl C (Code + Comment) và uncmt bằng Ctrl K + Ctrl U (Code + Uncomment) -->
+@* phím tắt Ctrl / tạo cmt nhưng dưới dạng Razor (C#), và có thể uncmt bằng cách lặp lại Ctrl / *@
+@* <br /> là cú pháp xuống dòng *@
+
+@* đây là cách xuống dòng giữ nguyên định dạng *@
+<pre>
+Dòng 1
+Dòng 2
+    Thụt đầu dòng
+</pre>
+
+@* Đây là cách tạo liên kết (hyperlink) trong Razor View để chuyển trang*@
+<a href="/Home/Index">Trang chủ </a> <br />
+
+@* FORM and INPUT – CHỖ NHẬP DỮ LIỆU *@
+<form method="post" 
+    asp-action="Login">
+    <input name="Username" />
+    <input name="Password" type="password" />
+    <button type="submit">Login</button>
+</form>
+
+@* Tạo bảng *@
+<br />
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<table>
+    <tr>
+        <td>Tên</td>
+        <td>Email</td>
+    </tr>
+    <tr>
+        <td>Phan Thành Tâm</td>
+        <td>pttbk9cqt@gmail.com</td>
+    </tr>
+</table>
+
+
+
+
