@@ -105,7 +105,7 @@ Ví dụ:
     int year = DateTime.Now.Year;
 } *@
 
-Khi bạn tạo cấu trúc thư mục mới vượt ra khỏi mặc định của ASP.NET MVC, bạn cần đảm bảo rằng bạn đã cấu hình đúng trong tệp Startup.cs hoặc Program.cs để ứng dụng của bạn có thể tìm thấy các view trong các thư mục tùy chỉnh đó. Điều này thường bao gồm việc thêm các đường dẫn tìm kiếm view bổ sung vào dịch vụ Razor View Engine.
+@* @* Khi bạn tạo cấu trúc thư mục mới vượt ra khỏi mặc định của ASP.NET MVC, bạn cần đảm bảo rằng bạn đã cấu hình đúng trong tệp Startup.cs hoặc Program.cs để ứng dụng của bạn có thể tìm thấy các view trong các thư mục tùy chỉnh đó. Điều này thường bao gồm việc thêm các đường dẫn tìm kiếm view bổ sung vào dịch vụ Razor View Engine.
 Ví dụ khi tạo cây thư mục như sau: \Views\Pages\Home\Index.cshtml
 Ở Homepage.cshtml ta cần sửa view lại như sau để trỏ đúng
         public IActionResult Homepage()
@@ -114,6 +114,6 @@ Ví dụ khi tạo cây thư mục như sau: \Views\Pages\Home\Index.cshtml
             return View("~/Views/Pages/Home/Index.cshtml");
         }
         Ngoài ra, bạn cũng có thể cấu hình trong Startup.cs hoặc Program.cs để thêm đường dẫn tìm kiếm view tùy chỉnh:
-        services.Configure<RazorViewEngineOptions>(options =>
+        services.Configure<RazorViewEngineOptions>(options => *@ 
 
-
+            @* dfsfsdfsdfs *@
