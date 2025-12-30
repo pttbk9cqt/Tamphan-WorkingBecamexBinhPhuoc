@@ -2,9 +2,9 @@
 
 namespace Tamphan_WorkingBecamexBinhPhuoc.Controllers
 {
-    public class HomepageController : Controller
+    public class HomeController : Controller
     {
-        public IActionResult Homepage()
+        public IActionResult Index()
         {
             ViewBag.Title = "Hello MVC - commit đầu tiên!";
             return View();
