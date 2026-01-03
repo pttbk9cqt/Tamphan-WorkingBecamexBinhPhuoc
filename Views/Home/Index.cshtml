@@ -1,9 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Đây là web của Tamphan tự viết sau khi tự học";
+    string tit_of_view_bag = ViewBag.Title;
+    string cc = ViewBag.CC;
 }
+@model List<User>;
 <h2>@ViewData["Title"]</h2>
-<p>Đây là View MVC đầu tiên do tôi tạo ra để phục vụ làm việc trong Becamex cho chính Tamphan.</p>
+<p>Đây là View MVC đầu tiên do tôi tạo ra để phục vụ làm việc trong Becamex cho chính Tam.</p>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    @foreach (User g in Model)
+    {
+        <h1 class="display-4">Welcome @g.Name</h1>
+    }
+    @for(int i = 0;i < Model.Count; i++)
+    {
+        <h2 class="display-4">Welcome @Model[i].Name</h2>
+    }
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
