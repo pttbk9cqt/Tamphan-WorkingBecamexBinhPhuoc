@@ -2,13 +2,11 @@
 
 namespace Tamphan_WorkingBecamexBinhPhuoc.Controllers
 {
-    public class HomeController : Controller
+    public class ProductController : Controller
     {
         public IActionResult Index()
-        {
-            ViewBag.Title = "Hello MVC - commit đầu tiên tôi tạo đó!";
+        {   ViewData["Title"] = "Product List - Welcome to our store!";
             return View();
         }
     }
 }
-
