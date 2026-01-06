@@ -1,19 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Đây là web của Tamphan tự viết sau khi tự học";
-    string tit_of_view_bag = ViewBag.Title;
-    string cc = ViewBag.CC;
+    ViewData["Title"] = "Đây là web của Tamphan tự viết sau khi tự học ASP.NET MVC";
 }
 @model List<User>;
 <h2>@ViewData["Title"]</h2>
-<p>Đây là View MVC đầu tiên do tôi tạo ra để phục vụ làm việc trong Becamex cho chính Tam.</p>
+<p>Creator: Tamphan</p>
+<h3>Các tùy chọn công việc:</h3>
+<p>Tạo hợp đồng/Thỏa thuận hợp tác <a href="https://learn.microsoft.com/aspnet/core">GO</a>.</p>
+<p>Đăng nhập web điện lực: <a href="https://cskh.evnspc.vn/TaiKhoan/DangNhap?previousLink=/TraCuu/HoaDonTienDien">Go CSKH EVNSPC</a>.</p>
 <div class="text-center">
-    @foreach (User g in Model)
-    {
-        <h1 class="display-4">Welcome @g.Name</h1>
-    }
-    @for(int i = 0;i < Model.Count; i++)
-    {
-        <h2 class="display-4">Welcome @Model[i].Name</h2>
-    }
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

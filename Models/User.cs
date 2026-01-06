@@ -3,26 +3,21 @@
     public class User
     {
         public int ID { get; set; }
-        public string Name { get; set; } = string.Empty;
+        public string Mucdichsudung { get; set; } = string.Empty;
+        public string MaKH { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
-        public string PhoneNumber { get; set; } = string.Empty;
+        public int Tiendien { get; set; }
+
         public User() { }
-        public User(int iD, string name, string password, string phoneNumber)
+        public User(int iD, string mucdichsudung,string maKH, string password, int tiendien)
         {
             ID = iD;
-            Name = name;
+            Mucdichsudung = mucdichsudung;
+            MaKH = maKH;
             Password = password;
-            PhoneNumber = phoneNumber;
+            Tiendien = tiendien;
         }
-        public User(string password, string name)
-        {
-            Name = name;
-            Password = password;
-        }
-        public string GetPhoneNumber()
-        {
-            //vi du 0985423182, ma qg vn
-            return "+84" + PhoneNumber;
-        }
+
+
     }
 }
