@@ -65,8 +65,6 @@ Ctrl + Shift + F5 → Restart (là phím chức năng mặc định sẽ hiện 
 Ctrl + / để comment/uncomment dòng code hiện tại
 Ctrl + Tab → qua lại giữa các tab gần nhất trong recent
 Ctrl + Shift + Tab → qua lại giữa các tab xa nhất trong recent (tab có thứ tự được chọn cuối cùng)
-Ctrl + Shift + N → New project
 Ctrl + G → Go to line
 Ctrl + F → Find
 Ctrl + H → Replace
-Ctrl + B → Build

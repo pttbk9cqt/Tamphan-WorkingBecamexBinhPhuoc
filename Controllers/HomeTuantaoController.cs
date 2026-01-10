@@ -10,16 +10,16 @@ namespace Tamphan_WorkingBecamexBinhPhuoc.Controllers
             User u1 = new User()
             {
                 ID = 10,
-                Name = "Tam Phan",
+                Mucdichsudung = "Tam Phan",
                 Password = "daylapass",
-                PhoneNumber = "098776654322"
+                Tiendien = 12354
             };
             User u2 = new User()
             {
                 ID = 12,
-                Name = "Tam Phan 2",
+                Mucdichsudung = "Tam Phan 2",
                 Password = "daylapass",
-                PhoneNumber = "0987762"
+                Tiendien = 21354684
             };
             List<User> users = new List<User>() { u1, u2 };
             ViewBag.Title = "Hello MVC - commit đầu tiên tôi tạo đó!";
